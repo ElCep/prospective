@@ -6,8 +6,8 @@
 
 		<title>Viticulture de forte pente - table ronde prospective</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="description" content="Viticulture de forte pente - table ronde prospective">
+		<meta name="author" content="Etienne DELAY">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
@@ -15,6 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
+<!--POUR CHANGER LE STYLE-->
 		<!--<link rel="stylesheet" href="css/theme/black.css" id="theme">-->
 		<link rel="stylesheet" href="css/theme/night.css" id="theme">
 
@@ -75,17 +76,23 @@
 				   <img src="img/pano-banyuls.jpg">
 				   <small>Le vignoble de <a href="http://www.openstreetmap.org/?mlat=42.4794&mlon=3.1282#map=13/42.4795/3.1281">Banyuls-sur-Mer</a></small>
 				  </section>
-				  <section>
+				  <section data-background="img/galaxy.jpg" data-background-transition="slide" data-state="img-right">
 				    <h3>Une constélation de modèles</h3>
-				    <p>Au fure et à mesure des rencontres avec les viticulteurs et la comunauté scientifique nous avons aborder plusieurs questions</p>
+				    <p>Au fure et à mesure des rencontres avec les viticulteurs et la comunauté scientifique nous avons aborder plusieurs questions qui se sont traduit par différents modèles</p>
 				    <ul>
 				      <li>A <b>l'échelle régionnal</b> : La place du marché dans l'économie viticole et ses influances sur les formes paysagères</li>
 				      <li>A <b>l'échelle communale</b> : recherches de levier des dynamiques paysagère (pentes, distances, climat, etc)</li>
 				      <li>A <b>l'échelle parcellaire</b> : stratégies de lutte antiparasitique... exemple de l'eudémis</li>
 				    </ul>
+				    </br>
+				    </br>
+				    <small>Crédit photo :
+							<a href="https://www.flickr.com/photos/hubble-heritage/5453856212/in/photolist-9iWrrE-dZUfSq-edScNj-gzYp8-oWv5Tp-MRo3L-5yhWiu-edSefj-9vbE2t-9Kzoa-dyhNrD-hYvzg3-6XJoDj-edSd7G-8SZ2L5-iKmjBG-7RY52N-7JSQqC-9rja99-8tVWNf-hyzqTM-edSdBN-edScwY-5RYkq6-bbeigR-q2fTri-ohrv6Y-5SDGM6-bznjcU-dQDVRP-qxoLMF-7dzzxf-eSgvKY-edScjU-kuQfuD-7GGfUM-7evHLF-6gZyLy-bbjM8v-hyzMyT-5S3Fzm-pN7nmE-5Sh9qb-k5Z8Qe-5RhgKU-pXRVi4-qrwmZC-dWS2ti-4QjDRR-9djPEt"> Hubble Heritage
+</a> sur Flikr</small>
 				  </section>
 				  <section data-background="img/grape_nb1.jpg" data-background-transition="slide" data-state="img-right">
-				  <h3>2 modèles pour ouvrir la discution</h3>
+				  <h3>Pour ouvrir la discution</h3>
+				  <p align="left">Nous vous en présenterons deux : </p>
 				  <ol>
 				    <li>A l'échelle comunale: l'influence de la coopérative</li>
 				    <li>A l'échelle parcellaire : lutte contre l'eudémis</li>
@@ -100,12 +107,28 @@
 				  <section>
 				    <h2>CiVIsMe</h2>
 				    <small><p>Coopération VIticole et système de Montagne</p></small>
+				    <ul>
+				      <li><b>Les acteurs</b> : Les viticulteurs et la coopératives</li>
+				      <li><b>L'échelle spatial</b>: communale</li>
+				      <li><strong>L'échelle temporelle</strong> : l'année</li>
+				    </ul>
 				    <p align="left">Questions : </p>
 				    <ul>
 				      <li>Quels sont les effets de la coopérative (outil de production et de commercialisation) sur le territoire ?</li>
 				      <li>Les statuts sont ils une contraintes ou une protection de l'outil de production, ou un verrou au développement ?</li>
 				      <li>En quoi les différences de contexte soaciale locale peuvent elles être comprisent et que nous apprennent elles sur les territoires eux-mêmes?</li>
 				    </ul>
+				  </section>
+				  <section>
+				    <h2>Les données</h2>
+				    <p>Plusieurs sources de données pour ce modèle</p>
+				    <ul>
+				      <li>Des entretiens</li>
+				      <li>Des données sur le parcellaire</li>
+				      <li>Des données sur les échanges fonciers</li>
+				    </ul>
+				    <img src="img/localisation_vine.png" alt="localisation vine" height="350" style="float: right"/>
+				    <img src="img/isochrone.png" alt="courbes isochrone" height="350" style="float: right"/>
 				  </section>
 				  <section>
 				    <h3>Les processus</h3>
@@ -121,15 +144,47 @@
 				    <video preload="auto" controls="controls" src="video/failed_coop.webm"></video>
 				  </section>
 				  <section>
+				    <h3>Les variables ?</h3>
+				    <p>Quels effets des variables sur les indicateurs</p>
+				     <table>
+				      <tr>
+					<td>
+					les variables
+					</br>
+					  <ul>
+					    <li>Le contexte territoriale</li>
+					    <li>Le bonus coop</li>
+					    <li>Le malus coop</li>
+					  </ul>
+					</td>
+					<td>
+					Les indicateurs
+					</br>
+					  <ul>
+					    <li>Indice de Gini (mesure les inégalités)</li>
+					    <li>Nombre d'abandon</li>
+					    <li>Le pente moyenne des exploitations</li>
+					  </ul>
+					</td>
+				      </tr>
+				    </table> 
+				  </section>
+				  <section>
 				    <h3>Les principaux résultats</h3>
 				  </section>
 	<!-- Fin CIVISME -->
 				</section>
-								<section>
+	<!--On passe a une autre verticale-->
+				<section>
 	<!-- Début CeLL -->
 				  <section>
 				    <h2>CeLL</h2>
 				    <small><p>Confusion Lobesia Landscape</p></small>
+				    <ul>
+				      <li><b>Les acteurs</b> : Les individus d'eudémis, les diffuseurs de phéromones</li>
+				      <li><b>L'échelle spatiale</b> :  îlots de culture (groupes de parcelles)</li>
+				      <li><b>L'échelle temporelle</b> : la journée</li>
+				    </ul>
 				    <p align="left">Questions : </p>
 				    <ul>
 				      <li>La confusion sexuelle a elle un impacte sur les populations d'eudémis simulés?</li>
@@ -171,55 +226,86 @@
 					<video preload="auto" controls="controls" src="video/lobesia_t.webm" height="500"></video>
 				  </section>
 				<section>
+				    <h3>Les variables ?</h3>
+				    <p>Quels effets des variables sur les indicateurs</p>
+				     <table>
+				      <tr>
+					<td>
+					Les variables
+					</br>
+					  <ul>
+					    <li>La température</li>
+					    <li>La distance entre les diffuseurs (4m ou 20m)</li>
+					    <li>L'échelle spatiale de lutte (bassin ou parcelles) </li>
+					  </ul>
+					</td>
+					<td>
+					Les indicateurs
+					</br>
+					  <ul>
+					    <li>Nombre d'individus</li>
+					    <li>Répartition des pontes</li>
+					  </ul>
+					</td>
+				      </tr>
+				    </table> 
+				  </section>
+				  <section>
 				    <h3>Les principaux résultats</h3>
-					
 				</section>
 	<!-- Fin CeLL -->
 				</section>
-					<section>
-						<h3>Quand on parle de territoire</h3>
-						<blockquote cite="www.amazon.fr/s/ref=nb_sb_ss_c_0_17?__mk_fr_FR=ÅMÅŽÕÑ&url=search-alias%3Dstripbooks&field-keywords=les+mots+de+la+géographie&sprefix=les+mots+de+la+gé%2Caps%2C187">
-							&laquo;Le territoire tient à la "projection" sur un espace donné des
-							structures spécifiques d'un groupe d'humains, qui inclut le mode de
-							découpage et de gestion de l'espace , l'aménagement de cet espace
-							[...] concept relevant de la sociabilisation de l'espace.&raquo;
-						</blockquote>
-						<p align="right">Brunet <i>et al.</i> 1992<p>
-						<h3>Quand on parle de terroir</h3>
-						<blockquote cite="http://www.cairn.info/resume.php?ID_ARTICLE=EG_404_0337">
-							&laquo; [le] terroir est une portion de territoire, un
-							taxon, homogène à tous les points de vue, naturels et
-							socio-économiques&raquo;
-						</blockquote>
-						<p align="right">Rouvellac <i>et al.</i>, 2012<p>
-					</section>
-					<section>
-						<h3>Quand on parle de paysage</h3>
-						<blockquote cite="www.amazon.fr/s/ref=nb_sb_ss_c_0_17?__mk_fr_FR=ÅMÅŽÕÑ&url=search-alias%3Dstripbooks&field-keywords=les+mots+de+la+géographie&sprefix=les+mots+de+la+gé%2Caps%2C187">
-							&laquo;Le paysage est [...] une apparence et une représentation : un
-							 arrangement d'objets visibles et perçus par un sujet à travers ses propres
-							filtres [...]&raquo;
-						</blockquote>
-						<p align="right">Brunet <i>et al.</i> 1992<p>
-
-						<h3>Paysage et terroir ?</h3>
-						<blockquote cite="http://www.projetsdepaysage.fr/fr/du_paysage_au_terroir_viticole_de_forte_pente_a_la_recherche_des_leviers_du_management_territorial">
-							&laquo;On peut alors considérer le paysage non pas comme une composante
-							du terroir, mais comme l'une de ses résultantes. Les paysages
-							viticoles deviennent alors la partie visible à l'échelle du
-							territoire de la complexité des mécanismes mis en jeu dans
-							la notion de terroir&raquo;
-						</blockquote>
-						<p align="right">Delay 2013<p>
-
-
-					</section>
-
-				
+	<!--FIN de la PRéSENTATION DES MODELES-->
+	<!--DEBUT DE LA PROSPECTIVE-->
+				<section>
+				  <section>
+				    <h2>La prospective stratégique pour le territoire</h2>
+				    <blockquote cite="Godet, M., Prospective et planification stratégique, CPE">
+					&laquo;L'avenir ne doit pas être envisagé comme une line unique [...]: l'avenir est multiple et indéterminé. La construction de l'avenir s'explique autant par l'action humaine que par le jeux du déterminisme&raquo;
+				    </blockquote>
+				    <p align="right">Michel Godet, 1985<p>
+				    <p>L'objet de l'exercice de prospective consiste à imaginer des futurs possible et forcer leur réalisation.</p>
+				  </section>
+				  <section>
+				    <h2>Quelle futur pour la viticulture de forte pente?</h2>
+				    <p>Chercher les variables structurales du systèmes! Quelles sont les contraintes de la viticulture de forte pente?</p>
+				    <table>
+				      <tr>
+					<td>
+					  <ul>
+					    <li>Le prix du fonciers</li>
+					    <li>Le marché viti-vinicole</li>
+					    <li>Les structures sociales</li>
+					    <li>la qualité</li>
+					    <li>Le climat</li>
+					  </ul>
+					</td>
+					<td>
+					  <ul>
+					    <li>Les règles d'échanges</li>
+					    <li>Les évolution technique</li>
+					    <li>Les revenus des viticulteurs</li>
+					    <li>L'orographie</li>
+					    <li>La santé végétale</li>
+					  </ul>
+					</td>
+				      </tr>
+				    </table> 
+				  </section>
+				  <section>
+				    <h2>Comment ces contraintes interagissent?</h2>
+				    <p align="left">Par exemples : </p>
+				    <img src="img/igraph_variables_structurelle.png" height="470"></img>
+				  </section>
+				  <section>
+				    <h2>Un macro-scenario pour la viticulture de forte pente ?</h2>
+				    
+				  </section>
+				</section>
 				<section data-background="img/fin.jpg" data-background-transition="slide">
-					<h2>Merci de votre </br> attention</h2>
+					<h2>Merci de votre </br> aide</h2>
 					<img height="200" src="img/github.png" alt="logo gitHub"></img>
-					<p>Vous pouvez retrouver cette présentation sur GitHub</p>
+					<p>Vous pouvez retrouver cette présentation sur GitHub, à l'adresse : <b>http://unil.im/PuklZ</b>, ou en flashant le QRcode suivant !</p>
 					<img height="100" src="img/QR_code_contact.png" alt="contactez moi!"></img></br>
 					<small>réalisé avec <a href="https://github.com/hakimel/reveal.js">reveal.js</a></small></br>
 					<small>crédit photo : <a href="http://www.flickr.com/photos/misnyot/6357634305/sizes/m/in/photostream/">Thomas Misnyovszki </a> on Flickr</small>
