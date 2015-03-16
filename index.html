@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Viticulture de forte pente - table ronde prospective</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<!--<link rel="stylesheet" href="css/theme/black.css" id="theme">-->
+		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+
+			<div class="slides">
+<!-- Diapo d'introduction -->
+				<section>
+					<h1>Viticulture de forte pente</h1>
+					<h3>Prospective</h3>
+					<p>
+						<small>Par <a href="http://recherche.flsh.unilim.fr/geolab/etienne-delay/">Etienne Delay</a> doctorant GEOLAB/ <a href="https://twitter.com/elcep">@ElCep</a></small></br>
+						<small>Sous la direction de <a href="http://recherche.flsh.unilim.fr/geolab/eric-rouvellac/">Eric Rouvellac</a>, <a href="http://recherche.flsh.unilim.fr/geolab/phillipe-allee/">Philippe Allée</a> et <a href="http://lienss.univ-larochelle.fr/Becu-Nicolas-CR1">Nicolas Becu</a></small>
+					</p>
+					<p><small><strong>Tables ronde prospective - 18 mars 2015</strong></small></br>
+					<small>lieu : <a href="http://www.vins-cotevermeille.fr/aoc-et-igp">Syndicat des vignobles de la côte vermeille</a> : Mas Reig</small></p>
+				</section>
+<!-- Section qui présente mes approches de modélisation à base d'agents -->
+				<section>
+				  <section>
+				  <h2>Introduction</h2>
+				  Une thèse depuis 2011 : 
+				      <blockquote cite="http://recherche.flsh.unilim.fr/geolab/2013/01/08/these-prospective-paysagere-des-territoires-viticoles-de-fortes-pentes/">
+						&ldquo;Evolutions et Prospectives paysagère des territoires viticoles de fortes pentes&rdquo;
+				      </blockquote>
+				      <p>L'objectifs est explorer la complexité des interactions Homme &#8596; Environnement dans un contexte viti-vinicole</p>
+				      <script src="https://embed.github.com/view/geojson/ElCep/vitiTerroir/master/data_geo/points_terrain_these.geojson"></script>
+				  </section>
+				  <section>
+				  <h2>Méthodologie</h2>
+				  <p align="left">Une approche empirique pour comprendre les interactions sociales et leurs influance sur le territoire basé sur :</p>
+				    <ul>
+				      <li>Entretien</li>
+				      <li>Observations de terrain</li>
+				      <li>Creation de données</li>
+				    </ul>
+				   <p align="left">Et la formalisation de ses interactions sous forme de modèles</p>
+				   <img src="img/pano-banyuls.jpg">
+				   <small>Le vignoble de <a href="http://www.openstreetmap.org/?mlat=42.4794&mlon=3.1282#map=13/42.4795/3.1281">Banyuls-sur-Mer</a></small>
+				  </section>
+				  <section>
+				    <h3>Une constélation de modèles</h3>
+				    <p>Au fure et à mesure des rencontres avec les viticulteurs et la comunauté scientifique nous avons aborder plusieurs questions</p>
+				    <ul>
+				      <li>A <b>l'échelle régionnal</b> : La place du marché dans l'économie viticole et ses influances sur les formes paysagères</li>
+				      <li>A <b>l'échelle communale</b> : recherches de levier des dynamiques paysagère (pentes, distances, climat, etc)</li>
+				      <li>A <b>l'échelle parcellaire</b> : stratégies de lutte antiparasitique... exemple de l'eudémis</li>
+				    </ul>
+				  </section>
+				  <section data-background="img/grape_nb1.jpg" data-background-transition="slide" data-state="img-right">
+				  <h3>2 modèles pour ouvrir la discution</h3>
+				  <ol>
+				    <li>A l'échelle comunale: l'influence de la coopérative</li>
+				    <li>A l'échelle parcellaire : lutte contre l'eudémis</li>
+				  </ol>
+				  <small>Crédit photo :
+							<a href="https://www.flickr.com/photos/82088316@N05/8011959622">tribp</a> sur Flikr</small>
+				  </section>
+				</section>
+<!-- Début des parties sur les modèles -->
+				<section>
+	<!-- Début CIVISME -->
+				  <section>
+				    <h2>CiVIsMe</h2>
+				    <small><p>Coopération VIticole et système de Montagne</p></small>
+				    <p align="left">Questions : </p>
+				    <ul>
+				      <li>Quels sont les effets de la coopérative (outil de production et de commercialisation) sur le territoire ?</li>
+				      <li>Les statuts sont ils une contraintes ou une protection de l'outil de production, ou un verrou au développement ?</li>
+				      <li>En quoi les différences de contexte soaciale locale peuvent elles être comprisent et que nous apprennent elles sur les territoires eux-mêmes?</li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h3>Les processus</h3>
+				    <img src="img/scheduling_civisme.png" alt="les processus en jeux dans le modèle civisme"  height="470">
+				  </section>
+				  <section>
+				    <h3>Le fonctionnement du modèle de base</h3>
+				    <video preload="auto" controls="controls" src="video/coop.webm"></video>
+				  </section>
+				  <section>
+				    <h3>Et si ...</h3>
+				    <p>...la coopérative disparait ?</p>
+				    <video preload="auto" controls="controls" src="video/failed_coop.webm"></video>
+				  </section>
+				  <section>
+				    <h3>Les principaux résultats</h3>
+				  </section>
+	<!-- Fin CIVISME -->
+				</section>
+								<section>
+	<!-- Début CeLL -->
+				  <section>
+				    <h2>CeLL</h2>
+				    <small><p>Confusion Lobesia Landscape</p></small>
+				    <p align="left">Questions : </p>
+				    <ul>
+				      <li>La confusion sexuelle a elle un impacte sur les populations d'eudémis simulés?</li>
+				      <li>L'espace est il un facteurs influençant la dynamique de population du parasite?</li>
+				      <li>Quelles sont les stratégies de lutte intégrer optimale pour lutter contre ce microlépidoptère ?</li>
+				      <li>Quelles sont les conséquences d'un passager clandestin dans la lutte intégrée ?</li>
+				    </ul>
+				  </section>
+				  <section>
+				    <h2>Des parcelles témoins</h2>
+				    <h3>sur Collioure depuis 1999</h3>
+				    <script src="https://embed.github.com/view/geojson/ElCep/vitiTerroir/master/data_geo/point_latourette.geojson
+"></script>
+				  </section>
+				  <section>
+				    <h2>Le cycle biologique</h2>
+				    <h3>le développement des <i>lobesia</i> est dépendant de la température</h3>
+				    <img src="img/datalogger.jpg" alt="un data logger de terviclim" height="350" width="30%" style="float: right"/>
+				    <p>Une littérature abondante : Bière <i>et al.</i> 1998, Roditakis <i>et al.</i> 2001, Milonas <i>et al.</i> 2001, etc.</p>
+				    <p>Depuis 2012, 11 parcelles sont équipées de capteurs de températures (relevé toutes les 10 min), grâce a l'<a href="http://terviclim.in2p3.fr/">ANR TerViClim</a></p>
+				    <img src="img/temp_beart.png" alt="température capteur beart"  height="250"/>
+				  </section>
+				  <section>
+				    <h2>Des observations de terrain</h2>
+				    <p>Théoriquement 4 générations de <i>lobesia</i> par an. C'est généralement sur la 3<sup><small>ème</small></sup>génération que la récolte est sensible (grappe en formation)</p>
+				    <img src="img/lobesia_real.png" height="350"></img>
+				    <p>mais dans la pratique, la 3<sup><small>ème</small></sup> génération n'est pas toujours facile à observer !</p>
+				  </section>
+				  <section>
+				    <h2>Les processus</h2>
+				    <img src="img/scheduling_cell.png" height="470"></img>
+				  </section>
+				  <section>
+				    <h4>Comportement de base</h4>
+					<video preload="auto" controls="controls" src="video/lobesia_wt.webm" height="500"></video>
+				  </section>
+				  <section>
+				    <h4>Exploration des méthodes de lutte</h4>
+					<video preload="auto" controls="controls" src="video/lobesia_t.webm" height="500"></video>
+				  </section>
+				<section>
+				    <h3>Les principaux résultats</h3>
+					
+				</section>
+	<!-- Fin CeLL -->
+				</section>
+					<section>
+						<h3>Quand on parle de territoire</h3>
+						<blockquote cite="www.amazon.fr/s/ref=nb_sb_ss_c_0_17?__mk_fr_FR=ÅMÅŽÕÑ&url=search-alias%3Dstripbooks&field-keywords=les+mots+de+la+géographie&sprefix=les+mots+de+la+gé%2Caps%2C187">
+							&laquo;Le territoire tient à la "projection" sur un espace donné des
+							structures spécifiques d'un groupe d'humains, qui inclut le mode de
+							découpage et de gestion de l'espace , l'aménagement de cet espace
+							[...] concept relevant de la sociabilisation de l'espace.&raquo;
+						</blockquote>
+						<p align="right">Brunet <i>et al.</i> 1992<p>
+						<h3>Quand on parle de terroir</h3>
+						<blockquote cite="http://www.cairn.info/resume.php?ID_ARTICLE=EG_404_0337">
+							&laquo; [le] terroir est une portion de territoire, un
+							taxon, homogène à tous les points de vue, naturels et
+							socio-économiques&raquo;
+						</blockquote>
+						<p align="right">Rouvellac <i>et al.</i>, 2012<p>
+					</section>
+					<section>
+						<h3>Quand on parle de paysage</h3>
+						<blockquote cite="www.amazon.fr/s/ref=nb_sb_ss_c_0_17?__mk_fr_FR=ÅMÅŽÕÑ&url=search-alias%3Dstripbooks&field-keywords=les+mots+de+la+géographie&sprefix=les+mots+de+la+gé%2Caps%2C187">
+							&laquo;Le paysage est [...] une apparence et une représentation : un
+							 arrangement d'objets visibles et perçus par un sujet à travers ses propres
+							filtres [...]&raquo;
+						</blockquote>
+						<p align="right">Brunet <i>et al.</i> 1992<p>
+
+						<h3>Paysage et terroir ?</h3>
+						<blockquote cite="http://www.projetsdepaysage.fr/fr/du_paysage_au_terroir_viticole_de_forte_pente_a_la_recherche_des_leviers_du_management_territorial">
+							&laquo;On peut alors considérer le paysage non pas comme une composante
+							du terroir, mais comme l'une de ses résultantes. Les paysages
+							viticoles deviennent alors la partie visible à l'échelle du
+							territoire de la complexité des mécanismes mis en jeu dans
+							la notion de terroir&raquo;
+						</blockquote>
+						<p align="right">Delay 2013<p>
+
+
+					</section>
+
+				
+				<section data-background="img/fin.jpg" data-background-transition="slide">
+					<h2>Merci de votre </br> attention</h2>
+					<img height="200" src="img/github.png" alt="logo gitHub"></img>
+					<p>Vous pouvez retrouver cette présentation sur GitHub</p>
+					<img height="100" src="img/QR_code_contact.png" alt="contactez moi!"></img></br>
+					<small>réalisé avec <a href="https://github.com/hakimel/reveal.js">reveal.js</a></small></br>
+					<small>crédit photo : <a href="http://www.flickr.com/photos/misnyot/6357634305/sizes/m/in/photostream/">Thomas Misnyovszki </a> on Flickr</small>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
